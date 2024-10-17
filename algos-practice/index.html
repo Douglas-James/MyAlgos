@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Performance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>3D Performance Tracker</h1>
+
+    <label for="nValue">Enter a number (n):</label>
+    <input type="number" id="nValue" min="1" placeholder="Enter n" />
+
+    <h2>Choose Function</h2>
+    <div class="buttons">
+      <button data-function="addUpToFirst">addUpToFirst</button>
+      <button data-function="addUpToSecond">addUpToSecond</button>
+      <button data-function="countUpAndDown">countUpAndDown</button>
+      <button data-function="printAllPairs">printAllPairs</button>
+      <button data-function="numberOfHalves">numberOfHalves</button>
+      <button data-function="totalNumberOfHalves">totalNumberOfHalves</button>
+      <button data-function="logAllBinaries">logAllBinaries</button>
+    </div>
+
+    <h2>3D Performance Plot</h2>
+    <button id="runTest">Run Test</button>
+
+    <div id="3dPlot"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
